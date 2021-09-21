@@ -1,5 +1,6 @@
-import firebase from 'firebase/app';
-import "firebase/database";
+import firebase from "firebase/compat/app"
+import "firebase/compat/database";
+
 const firebaseConfig = {
     apiKey: "AIzaSyAuj5MbovWOnrYYOe2JeYFB0ZwXrJC6-DA",
     authDomain: "finote-d0a9a.firebaseapp.com",
@@ -10,5 +11,6 @@ const firebaseConfig = {
     measurementId: "G-S3DD3Y7BPN"
   };
 
-  const fireDb = firebase.initializeApp(firebaseConfig);
-  export default fireDb.database().ref();
+const fireDb = firebase.initializeApp(firebaseConfig);
+
+export default fireDb.database().ref();

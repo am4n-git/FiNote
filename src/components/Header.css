@@ -1,0 +1,29 @@
+.header{
+    overflow: hidden;
+    background-color: #2b2b2b;
+}
+.header p{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin-right: 12px;
+    line-height: 15px;
+    border-radius: 6px;
+}
+.header p .logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+.header p:hover{
+    background-color: white;
+    color: black;
+}
+.header p.active{
+    background-color: dodgerblue;
+    color: white;
+}
+.header-right{
+    float: right;
+}
